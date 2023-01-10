@@ -1,0 +1,11 @@
+#곱셈
+a=int(input())
+b=int(input())
+c=((b%100)%10)*a
+d=((b%100)//10)*a
+e=(b//100)*a
+f=a*b
+print(c)
+print(d)
+print(e)
+print(f)
