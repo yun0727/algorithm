@@ -1,7 +1,5 @@
-money, head = map(int, input().split())
+#엄청난 부자2
+a,b = map(int, input().split())
 
-num = money//head
-change = money%head
-
-print(num)
-print(change)
+print(a//b)
+print(a%b)
