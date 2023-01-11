@@ -1,10 +1,17 @@
 c=int(input())
+num=[]
+sc=[]
+re=[]
 for i in range(c):
-    li=list(map(int,input().split()))
-    c=0
-    for j in li[1:]:
-        avg=sum(li[1:])/li[0]
-        if j>avg:
-            c+=1
-    rate=c/li[0]*100
-    print('{0:0.3f}%'.format(rate))
+    num=list(map(int,input().split()))
+    sc.append(num)
+for i in range(c):
+    avg=(sum(sc[i])-sc[i][0])/sc[i][0]
+    plus=0
+    for j in range(0,len(sc[i])-1):
+        if avg<sc[i][j+1]:
+            plus+=1
+    re.append(round(plus/sc[i][0]*100,3))
+for i in range(c):
+    print("{0:0.3f}%".format(re[i]))
+    
