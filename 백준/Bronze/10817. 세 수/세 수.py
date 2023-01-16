@@ -1,0 +1,6 @@
+num=list(map(int,input().split()))
+max=max(num)
+min=min(num)
+num.remove(max)
+num.remove(min)
+print(num[0])
