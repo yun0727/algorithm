@@ -1,0 +1,9 @@
+phy=int(input())
+che=int(input())
+bio=int(input())
+ear=int(input())
+his=int(input())
+geo=int(input())
+science=[phy,che,bio,ear]
+society=[his,geo]
+print(sum(science)-min(science)+max(society))
