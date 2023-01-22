@@ -1,0 +1,5 @@
+face=input()
+face=face.split("(")
+left=face[0].count("@")
+right=face[1].count("@")
+print(left,right)
