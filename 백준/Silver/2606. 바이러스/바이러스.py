@@ -2,7 +2,7 @@ n=int(input())
 p=int(input())
 graph=[[] for i in range(n+1)]
 visited=[0]*(n+1)
-for i in range(p):
+for _ in range(p):
     a,b=map(int,input().split())
     #인접 리스트 만들기 
     graph[a]+=[b]
